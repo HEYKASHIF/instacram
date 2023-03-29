@@ -58,11 +58,11 @@ Widget getBottomNavbar() {
             color: Colors.white,
           ),
           Icon(
-            Icons.upload,
+            Icons.upload_outlined,
             color: Colors.white,
           ),
           Icon(
-            Icons.favorite,
+            Icons.favorite_outline,
             color: Colors.white,
           ),
           Icon(
