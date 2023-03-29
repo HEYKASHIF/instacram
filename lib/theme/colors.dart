@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-const appBar = Colors.black;
+const appBarColor = Colors.black;
 
 const appFooterColor = Colors.black;
