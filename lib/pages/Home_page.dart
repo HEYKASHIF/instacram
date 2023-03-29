@@ -18,6 +18,10 @@ class HomePage extends StatelessWidget {
             fontSize: 35,
           ),
         ),
+        leading: Icon(
+          Icons.camera_alt_outlined,
+          color: Colors.white,
+        ),
       ),
     );
   }
