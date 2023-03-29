@@ -11,7 +11,11 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: getAppBar(),
       bottomNavigationBar: getBottomNavbar(),
-      body: Story(),
+      body: Story(
+        name: "Alen",
+        img:
+            "https://media.licdn.com/dms/image/C4D03AQFRBDibSBO0AA/profile-displayphoto-shrink_800_800/0/1547412432773?e=2147483647&v=beta&t=daecBhIbcVX7YFvRWm3IhgsAsw9oX7WVgBJULZ8vmbo",
+      ),
     );
   }
 }

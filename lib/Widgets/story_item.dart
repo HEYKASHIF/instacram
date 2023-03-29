@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Story extends StatelessWidget {
-  const Story({super.key});
+  final String img;
+  final String name;
+  const Story({super.key, required this.img, required this.name});
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +22,7 @@ class Story extends StatelessWidget {
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: NetworkImage(
-                    'https://www.superprof.co.uk/images/teachers/teacher-home-modern-languages-student-cambridge-university-offering-tutoring-services-french-spanish-and-history-for-gcse-and-level.jpg'),
+                image: NetworkImage(img),
                 fit: BoxFit.cover,
               )),
         ),
