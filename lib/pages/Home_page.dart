@@ -16,12 +16,19 @@ class HomePage extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Billabong',
             fontSize: 35,
+            color: Colors.pink,
           ),
         ),
         leading: Icon(
           Icons.camera_alt_outlined,
           color: Colors.white,
         ),
+        actions: [
+          Icon(
+            Icons.message,
+            color: Colors.pink,
+          )
+        ],
       ),
     );
   }
