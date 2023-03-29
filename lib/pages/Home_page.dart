@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: getAppBar(),
+      bottomNavigationBar: getBottomNavbar(),
     );
   }
 }
@@ -37,5 +38,22 @@ AppBar getAppBar() {
         ),
       )
     ],
+  );
+}
+
+Widget getBottomNavbar() {
+  return Container(
+    color: Colors.pink,
+    height: 50,
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Icon(Icons.home),
+        Icon(Icons.search),
+        Icon(Icons.upload),
+        Icon(Icons.favorite),
+        Icon(Icons.person_2_outlined),
+      ],
+    ),
   );
 }
