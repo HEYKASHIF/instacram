@@ -43,17 +43,34 @@ AppBar getAppBar() {
 
 Widget getBottomNavbar() {
   return Container(
-    color: Colors.pink,
     height: 50,
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        Icon(Icons.home),
-        Icon(Icons.search),
-        Icon(Icons.upload),
-        Icon(Icons.favorite),
-        Icon(Icons.person_2_outlined),
-      ],
+    child: Padding(
+      padding: const EdgeInsets.all(5),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Icon(
+            Icons.home,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.search,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.upload,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.favorite,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.person_2_outlined,
+            color: Colors.white,
+          ),
+        ],
+      ),
     ),
   );
 }
