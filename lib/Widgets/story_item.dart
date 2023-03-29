@@ -5,12 +5,26 @@ class Story extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      height: 50,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: Colors.pink,
+    return Padding(
+      padding: const EdgeInsets.only(left: 10, bottom: 10),
+      child: Container(
+        width: 80,
+        height: 80,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: Colors.pink,
+        ),
+        child: Container(
+          width: 45,
+          height: 45,
+          decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                image: NetworkImage(
+                    'https://www.superprof.co.uk/images/teachers/teacher-home-modern-languages-student-cambridge-university-offering-tutoring-services-french-spanish-and-history-for-gcse-and-level.jpg'),
+                fit: BoxFit.cover,
+              )),
+        ),
       ),
     );
   }
