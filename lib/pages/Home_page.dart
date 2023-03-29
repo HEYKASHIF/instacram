@@ -16,7 +16,6 @@ class HomePage extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Billabong',
             fontSize: 35,
-            color: Colors.pink,
           ),
         ),
         leading: Icon(
@@ -24,9 +23,11 @@ class HomePage extends StatelessWidget {
           color: Colors.white,
         ),
         actions: [
-          Icon(
-            Icons.message,
-            color: Colors.pink,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Icon(
+              Icons.send,
+            ),
           )
         ],
       ),
