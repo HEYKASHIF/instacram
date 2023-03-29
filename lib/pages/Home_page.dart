@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instacram/Widgets/story_item.dart';
 import 'package:instacram/theme/colors.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,6 +11,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: getAppBar(),
       bottomNavigationBar: getBottomNavbar(),
+      body: Story(),
     );
   }
 }
