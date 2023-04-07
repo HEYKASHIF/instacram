@@ -7,26 +7,37 @@ class Story extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 10, bottom: 10),
-      child: Container(
-        width: 80,
-        height: 80,
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          color: Colors.pink,
-        ),
-        child: Container(
-          width: 45,
-          height: 45,
+    return Column(
+      children: [
+        Container(
+          width: 80,
+          height: 80,
           decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: NetworkImage(img),
-                fit: BoxFit.cover,
-              )),
+            shape: BoxShape.circle,
+            color: Colors.pink,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(3.0),
+            child: Container(
+              width: 45,
+              height: 45,
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                    image: NetworkImage(img),
+                    // fit: BoxFit.cover,
+                  )),
+            ),
+          ),
         ),
-      ),
+        SizedBox(
+          height: 5,
+        ),
+        Text(
+          '$name',
+          style: TextStyle(color: Colors.white),
+        )
+      ],
     );
   }
 }
